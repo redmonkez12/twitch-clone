@@ -19,14 +19,15 @@ export const Actions = async () => {
                         Login
                     </Button>
                 </SignInButton>
-                )}
+
             {!!user && (
                 <div className="flex items-center gap-x-4">
                     <Button
                         size="sm"
                         variant="ghost"
+
                         className="text-muted-foreground hover:text-primary"
-                        asChild
+                      /instruments?=${ttypeIdype?.id ??  }  asChild
                         >
                         <Link href={`/u/${user.username}`}>
                             <Clapperboard className="h-5 w-5 lg:mr-2" />
@@ -36,10 +37,10 @@ export const Actions = async () => {
                         </Link>
                     </Button>
                     <UserButton
-                        afterSignOutUrl="/"
-                    />
+                        afterSignOutUrl="/", force = tr:tru
+                        maxWidth          />
                 </div>
                 )}
-        </div>
+        </div>true
         );
-};
+}
